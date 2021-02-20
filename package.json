@@ -1,0 +1,25 @@
+{
+  "name": "internetfriend",
+  "version": "1.0.0",
+  "description": "* [Github](README.md/#Github)\r * [Description](README.md/#Description)\r * [Installation](README.md/#Installation)\r * [Usage](README.md/#Usage)\r * [License](README.md/#License)\r * [Credits](README.md/#Credits)\r * [Questions](README.md/#Questions)\r ## Github\r https://github.com/tiptondt1998/InternetFriend\r ## Description\r social networking app\r ## Installation\r  none\r ## Usage\r none\r ## License\r none\r ## Credits\r tiptondt1998\r ## Questions\r Contact me at: dylan.tipton@live.com",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiptondt1998/InternetFriend.git"
+  },
+  "author": "tiptondt1998",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiptondt1998/InternetFriend/issues"
+  },
+  "homepage": "https://github.com/tiptondt1998/InternetFriend#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.17"
+  }
+}
