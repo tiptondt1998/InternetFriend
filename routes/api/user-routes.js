@@ -1,4 +1,5 @@
-const router = require('express').Router();
+const router = require('express').Router({ mergeParams: true });
+
 
 const {
     getAllUsers,
@@ -18,6 +19,7 @@ router
 router
   .route('/:id')
   .get(getUserById)
+  .post(createUser)
   .put(updateUser)
   .delete(deleteUser);
 

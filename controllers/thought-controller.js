@@ -1,12 +1,11 @@
-const { Thought, User } = require('../models');
-
-const thoughtController = {
+const db = require('../models');
+module.exports = {
   // add comment to pizza
   addThought({ params, body }, res) {
     console.log(body);
-    Thought.create(body)
+    db.thought.create(body)
       .then(({ _id }) => {
-        return Thought.findOneAndUpdate(
+        return db.thought.findOneAndUpdate(
           { _id: params.userId },
           { $push: { thoughts: _id } },
           { new: true }
@@ -72,4 +71,4 @@ removeReply({ params }, res) {
 }
 };
 
-module.exports = thoughtController;
+// module.exports = thoughtController;
